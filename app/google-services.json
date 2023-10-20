@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "395812693983",
+    "project_id": "login-register-screen-f2b84",
+    "storage_bucket": "login-register-screen-f2b84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395812693983:android:b2c9f15b5d261217f6c66a",
+        "android_client_info": {
+          "package_name": "com.example.poe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSSfGE4Qf1oF3-pIBXp_jNgPcxokKMRcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient__3_"
+    tools:ignore="MissingDefaultResource">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#99AF17"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/house1" />
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="220dp"
+        android:layout_height="173dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/bird_logo" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_centerHorizontal="true"
+        android:text="Your Birdy Findings"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textColor="#99AF17"
+        android:textStyle="bold|italic" />
+
+    <!-- Bird Entries Layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:id="@+id/birdEntriesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- A sample entry for a sighting -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/speciesTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Species: Sparrow"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/locationTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/speciesTextView"
+                    android:text="Location: Park"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/dateTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/locationTextView"
+                    android:text="Date: 2023-10-18"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dateTextView"
+                    android:text="Description: A beautiful sparrow."
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <!-- Add more sighting entries dynamically based on the data -->
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

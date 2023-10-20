@@ -1,0 +1,122 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD8E6">
+
+    <!-- Image at the Top -->
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="350dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#99AF17"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/house1" />
+
+    <ImageView
+        android:id="@+id/settingsImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/bird_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <!-- "Distance units" Section -->
+    <TextView
+        android:id="@+id/distanceUnitsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance units"
+        android:textSize="18sp"
+        android:layout_below="@+id/settingsImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Radio Buttons for Distance Units -->
+    <RadioGroup
+        android:id="@+id/distanceUnitsRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/distanceUnitsLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/kilometersRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kilometers" />
+
+        <RadioButton
+            android:id="@+id/milesRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miles" />
+    </RadioGroup>
+
+    <!-- "Distance Travel" Section -->
+    <TextView
+        android:id="@+id/distanceTravelLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance Travel"
+        android:textSize="18sp"
+        android:layout_below="@+id/distanceUnitsRadioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Slider for Distance Travel -->
+    <SeekBar
+        android:id="@+id/distanceTravelSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/distanceTravelLabel"
+        android:layout_marginTop="10dp"
+        android:max="4500"
+        android:thumb="@drawable/ic_launcher_foreground" />
+
+    <!-- Slider Labels -->
+    <TextView
+        android:id="@+id/sliderLeftLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500m"
+        android:layout_below="@+id/distanceTravelSlider"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/sliderRightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5km"
+        android:layout_below="@+id/distanceTravelSlider"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp" />
+
+    <!-- "Save" and "Logout" Buttons -->
+    <Button
+        android:backgroundTint="#99AF17"
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@+id/sliderRightLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:backgroundTint="#99AF17"
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_below="@+id/saveButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

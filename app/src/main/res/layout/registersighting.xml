@@ -1,0 +1,138 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/gradient__3_">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:padding="16dp">
+
+      <TextView
+          android:id="@+id/titleTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:text="Record your Sightings"
+          android:textSize="36sp"
+          android:textColor="#99AF17"
+          android:textStyle="bold" />
+
+      <ImageButton
+          android:id="@+id/imageButton1"
+          android:layout_width="50dp"
+          android:layout_height="45dp"
+          android:layout_gravity="end"
+          android:background="#00FFFFFF"
+          android:backgroundTint="#99AF17"
+          android:scaleType="fitStart"
+          android:src="@drawable/house1" />
+
+      <TextView
+          android:id="@+id/Species"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Species:"
+          android:textColor="@color/black"
+          android:textSize="18sp"
+          android:layout_marginTop="16dp" />
+
+      <EditText
+          android:id="@+id/speciesedittext"
+          style="@android:style/Widget.Holo.EditText"
+          android:layout_width="match_parent"
+          android:layout_height="44dp"
+          android:hint="Enter the bird species"
+          android:backgroundTintMode="screen"
+          android:background="@drawable/edit_background"
+          android:labelFor="@id/usernameLabel"
+          android:outlineProvider="bounds"
+          android:overScrollMode="never"
+          android:singleLine="false"
+          android:layout_marginTop="8dp" />
+
+      <TextView
+          android:id="@+id/Location"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Location of Sighting:"
+          android:textColor="@color/black"
+          android:textSize="18sp"
+          android:layout_marginTop="16dp" />
+
+      <!-- Search view to search our location -->
+      <androidx.appcompat.widget.SearchView
+          android:id="@+id/idSearchView"
+          android:layout_width="match_parent"
+          android:layout_height="44dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginBottom="8dp"
+          android:elevation="5dp"
+          android:background="@drawable/edit_background"
+          />
+
+      <TextView
+          android:id="@+id/date"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Date of Sighting:"
+          android:textColor="@color/black"
+          android:textSize="18sp"
+          android:layout_marginTop="16dp" />
+
+      <DatePicker
+          android:id="@+id/smallDatePicker"
+          android:layout_width="match_parent"
+          android:layout_height="175dp"
+          android:layout_marginTop="8dp"
+          android:background="@android:color/transparent"
+          android:calendarViewShown="false"
+          android:datePickerMode="spinner"
+          android:spinnersShown="true" />
+
+      <TextView
+          android:id="@+id/description"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Description:"
+          android:textColor="@color/black"
+          android:textSize="18sp"
+          android:layout_marginTop="16dp" />
+
+      <EditText
+          android:id="@+id/descriptionEditText"
+          android:layout_width="match_parent"
+          android:layout_height="96dp"
+          android:textColor="#000000"
+          android:minLines="4"
+          android:hint="Describe the bird"
+          android:background="@drawable/edit_background"
+          android:layout_marginTop="8dp"
+          android:layout_marginBottom="16dp" />
+
+      <Button
+          android:id="@+id/uploadImageButton"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Attach Image"
+          android:drawableLeft="@drawable/paperclip"
+          android:backgroundTint="#99AF17"
+          android:textColor="#FFFFFF"
+          android:textSize="16sp"
+          android:layout_marginTop="8dp"
+          android:layout_gravity="center_horizontal" />
+
+      <Button
+          android:id="@+id/loginButton"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Log Sighting"
+          android:textSize="20sp"
+          android:layout_gravity="center_horizontal"
+          android:backgroundTint="#99AF17"
+          android:layout_marginTop="8dp" />
+   </LinearLayout>
+</ScrollView>

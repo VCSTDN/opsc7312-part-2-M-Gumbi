@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+    </style>
+
+    <style name="Theme.POE" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your Theme.POE here -->
+    </style>
+</resources>

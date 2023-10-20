@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient__3_">
+
+    <!-- Logo and Title -->
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/bird_logo" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get started by clicking on any of the buttons below that you would like to explore!"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:layout_below="@+id/logo1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/buttonLocation1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textStyle="bold"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#99AF17"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+        android:id="@+id/buttonCreateSightings1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Sighting"
+        android:textStyle="bold"
+        android:layout_below="@+id/buttonLocation1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#99AF17"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+        android:id="@+id/buttonViewSightings1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Sightings"
+        android:textStyle="bold"
+        android:layout_below="@+id/buttonCreateSightings1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#99AF17"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+        android:id="@+id/buttonRarest1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rarest"
+        android:textStyle="bold"
+        android:layout_below="@+id/buttonViewSightings1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#99AF17"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+        android:id="@+id/buttonSettings1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textStyle="bold"
+        android:layout_below="@+id/buttonRarest1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#99AF17"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+        android:id="@+id/buttonLogout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textStyle="bold"
+        android:layout_below="@+id/buttonSettings1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#99AF17"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Add more UI elements as needed -->
+
+</RelativeLayout>
